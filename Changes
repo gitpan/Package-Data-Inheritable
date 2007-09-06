@@ -5,3 +5,6 @@ Revision history for Package-Data-Inheritable
         Method interface and Exporter like interface working.
         Interface not stable.
 
+0.02    2007-09-06
+        Fixed perl executable path in tests
+

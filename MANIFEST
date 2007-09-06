@@ -6,7 +6,6 @@ README
 lib/Package/Data/Inheritable.pm
 t/00-load.t
 t/M00-debug_dump.t
-t/M00-debug_dump.t.orig
 t/M01-export_inherit.t
 t/M02-isa.t
 t/M03-export_exportok.t

@@ -7,7 +7,7 @@ use base qw( Exporter );
 
 use Carp;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 # This method carries out the actual package variable inheritance via export
@@ -140,7 +140,7 @@ Package::Data::Inheritable - Inheritable and overridable package data/variables
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -185,9 +185,9 @@ inheritance and will also be able to define its vars and make them inheritable
 by its subclasses.
 
 Within your class (hierarchy) code you will benefit from compiler checks on those
-variables. The overall result is close to real class *data* as opposed to
+variables. The overall result is close to real class data as opposed to
 class methods.
-Of course you can wrap your variables is accessor/mutators methods as you need.
+Of course you can wrap your variables in accessor/mutators methods as you need.
 
 The semantic provided mimics the static data members in languages like C++ and Java.
 When you assign to an inherited variable within a derived class, every class
