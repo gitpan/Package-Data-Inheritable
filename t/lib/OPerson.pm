@@ -5,7 +5,7 @@ package OPerson;
 
 use base qw( Package::Data::Inheritable );
 BEGIN {
-    inherit Package::Data::Inheritable;
+    #inherit Package::Data::Inheritable;
 }
 
 # Export by hand

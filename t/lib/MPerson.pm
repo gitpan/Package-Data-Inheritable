@@ -5,7 +5,7 @@ use warnings;
 package MPerson;
 use base qw( Package::Data::Inheritable );
 BEGIN {
-    inherit Package::Data::Inheritable;
+    #inherit Package::Data::Inheritable;
 
     MPerson->pkg_inheritable('$COMMON_NAME'    => 'COMMON_NAME');
     MPerson->pkg_inheritable('$USERNAME_mk_st' => 'USERNAME');
