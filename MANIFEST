@@ -11,6 +11,7 @@ t/M02-isa.t
 t/M03-export_exportok.t
 t/M05-export_values.t
 t/M07-code_usage.t
+t/M08-const_scalar.t
 t/Mbase_derived_main.pl
 t/Mperl_output
 t/Mtest_perl_c++_java_equivalency.t

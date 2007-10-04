@@ -5,12 +5,9 @@ use strict;
 use Test::More tests => 6;
 
 use lib qw( t t/lib ./lib );
-#use MPerson;    # do not use if you want to check proper call of import() via use base
-#use MWorker;    # do not use if you want to check proper call of import() via use base
 
 use MEmployee;
-BEGIN { inherit MEmployee };
-use Data::Dumper;
+BEGIN { inherit MEmployee }
 
 can_ok('MPerson',  'inherit');
 can_ok('MWorker',  'inherit');

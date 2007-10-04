@@ -5,33 +5,10 @@ use strict;
 use Test::More tests => 3;
 #use Test::Deep;
 
-#use MODULE ;
-#DESCRIPTION
-#It is exactly equivalent to
-#    BEGIN { require Module; import Module LIST; }
-#
-#use base qw(Foo Bar);
-#DESCRIPTION
-#Allows you to both load one or more modules, while setting up inheritance from
-#those modules at the same time.  Roughly similar in effect to:
-#   package Baz;
-#   BEGIN {
-#       require Foo;
-#       require Bar;
-#       push @ISA, qw(Foo Bar);
-#   }
-#
-# NOTE:
-# This means that use base, being performed via 'require' does NOT call
-# the import() method.
-# Hence, it does not work properly with Exporter
-
 use lib qw( t t/lib ./lib );
-#use OPerson;    # do not use if you want to check proper call of import() via use base
-#use OWorker;    # do not use if you want to check proper call of import() via use base
+
 use OEmployee;
-BEGIN { inherit OEmployee };
-use Data::Dumper;
+BEGIN { inherit OEmployee }
 
 is( check_person_export_inherit(),   'OK', 'OPerson::EXPORT_INHERIT');
 is( check_worker_export_inherit(),   'OK', 'OWorker::EXPORT_INHERIT');

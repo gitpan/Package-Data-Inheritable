@@ -3,11 +3,10 @@ use warnings;
 use strict;
 
 use Test::More tests => 6;
-use Data::Dumper;
 
 use lib qw( t t/lib ./lib );
 use MEmployee;
-BEGIN { inherit MEmployee };
+BEGIN { inherit MEmployee }
 
 is( check_person_export_ok(),   'OK', 'MPerson::EXPORT_OK');
 is( check_worker_export_ok(),   'OK', 'MWorker::EXPORT_OK');

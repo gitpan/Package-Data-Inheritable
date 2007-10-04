@@ -6,8 +6,7 @@ use Test::More tests => 3;
 
 use lib qw( t t/lib ./lib );
 use OEmployee;
-BEGIN { inherit OEmployee };
-use Data::Dumper;
+BEGIN { inherit OEmployee }
 
 is( check_person_export_values(),   'OK',  'OPerson:: exported values');
 is( check_worker_export_values(),   'OK',  'OWorker:: exported values');

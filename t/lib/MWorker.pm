@@ -13,8 +13,6 @@ BEGIN {
     MWorker->pkg_inheritable('@USERNAME_mk_st' => ['USERNAME', 'WORKERNAME']);  # override member
 };
 
-#MWorker->_dumpstash();
-
 # Check all members scope visibility
 {
     no warnings "void"; # avoid 'Useless use of a variable in void context ... message'

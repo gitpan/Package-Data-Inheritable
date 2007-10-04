@@ -1,10 +1,10 @@
-Package-Data-Inheritable version 0.03
+Package-Data-Inheritable version 0.05
 
 DESCRIPTION
 
 A pure perl module to provide inheritable and overridable package variables
 without the need for accessor methods. After declaration, the variables can be
-used like ordinary package variables.
+used like ordinary package variables. Scalars can be declared constant.
 Internally the module relies on Exporter to propagate variables down the
 inheritance hierarchy.
 

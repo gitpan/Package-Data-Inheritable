@@ -7,9 +7,9 @@ use lib qw( t t/lib ./lib ../lib );
 package Base;
 use base qw( Package::Data::Inheritable );
 BEGIN {
-    Base->pkg_inheritable('$staticData1' => 1);
-    Base->pkg_inheritable('$staticData2' => 2);
-    Base->pkg_inheritable('$staticData3' => 3);
+    Base->pkg_inheritable('$staticData1' => 1);   # overidden in Derived
+    Base->pkg_inheritable('$staticData2' => 2);   # untouched in Derived
+    Base->pkg_inheritable('$staticData3' => 3);   # reassigned in Derived
 }
 
 sub new {

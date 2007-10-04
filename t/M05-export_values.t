@@ -6,8 +6,7 @@ use Test::More tests => 3;
 
 use lib qw( t t/lib ./lib );
 use MEmployee;
-BEGIN { inherit MEmployee };
-use Data::Dumper;
+BEGIN { inherit MEmployee }
 
 is( check_person_export_values(),   'OK',  'MPerson:: exported values');
 is( check_worker_export_values(),   'OK',  'MWorker:: exported values');

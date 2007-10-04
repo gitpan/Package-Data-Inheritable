@@ -22,9 +22,6 @@ our $personfield_exp    = 'personfield';
 our @EXPORT    = qw( $personfield_exp    );  # symbols to export by default
 our @EXPORT_OK = qw( $personfield_exp_ok );  # symbols to export on request
 
-
-#MPerson->_dumpstash();
-
 # check all members scope visibility
 sub check_visibility {
     no warnings "void"; # avoid 'Useless use of a variable in void context ... message'

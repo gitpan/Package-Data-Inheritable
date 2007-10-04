@@ -5,12 +5,8 @@ use strict;
 use Test::More tests => 6;
 
 use lib qw( t t/lib ./lib );
-#use OPerson;    # do not use if you want to check proper call of import() via use base
-#use OWorker;    # do not use if you want to check proper call of import() via use base
-#use lib qw( t t/api_our );
 use OEmployee;
-BEGIN { inherit OEmployee };
-use Data::Dumper;
+BEGIN { inherit OEmployee }
 
 can_ok('OPerson',  'inherit');
 can_ok('OWorker',  'inherit');

@@ -5,10 +5,8 @@ use strict;
 use Test::More tests => 3;
 
 use lib qw( t t/lib ./lib );
-#use OPerson;    # do not use if you want to check proper call of import() via use base
-#use OWorker;    # do not use if you want to check proper call of import() via use base
 use OEmployee;
-BEGIN { inherit OEmployee };
+BEGIN { inherit OEmployee }
 
 
 is( check_setting_inherited_members(), 'OK',  'Setting of inherited members');
